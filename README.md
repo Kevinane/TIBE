@@ -41,44 +41,6 @@ The graph stage uses the following broad HoVer-Net classes:
 
 ---
 
-## Repository Layout
-
-```text
-TIBE/
-├── README.md
-├── environment.yml
-├── requirements.txt
-├── WSIGraph.py
-│
-├── src/
-│   ├── F1_CellSegment.py
-│   ├── F1_Code.py
-│   ├── F3_FeatureExtract.py
-│   ├── F3_code.py
-│   └── image_boundary_get.py
-│
-├── Hover/
-│   ├── hovernet_fast_pannuke_type_tf2pytorch.tar
-│   ├── type_info.json
-│   └── ...
-│
-├── example/
-│   ├── input_example/
-│   │   └── example001.ndpi
-│   ├── tumor_centroids/
-│   │   └── example001_Feats_T.csv
-│   ├── level4_images/
-│   │   └── example001_level4.png
-│   └── expected_output/
-│
-└── docs/
-```
-
-`Hover/` contains the bundled HoVer-Net implementation and model assets.
-`WSIGraph.py` contains the cell-graph and feature calculations used by the
-scripts in `src/`.
-
----
 
 ## Environment
 
@@ -472,8 +434,6 @@ and add:
 Suggested manuscript citation:
 
 ```text
-Zhang H, Yang F, Tian P, et al.
-Spatial border ecosystems reveal prognosis and vulnerabilities in
-triple-negative breast cancer.
+Zhang H, Yang F, Tian P, et al. Spatial border ecosystems reveal prognosis and vulnerabilities in triple-negative breast cancer.
 [Journal information to be updated]
 ```
