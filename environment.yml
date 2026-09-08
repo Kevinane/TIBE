@@ -1,0 +1,36 @@
+name: tnbc-border-py39
+
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  - python=3.9.18
+  - pip=23.3.2
+  # Native OpenSlide library required by openslide-python.
+  - openslide
+  - pip:
+      # CUDA 12.1 is supported by the node's 535 driver and A100 GPUs.
+      - --extra-index-url https://download.pytorch.org/whl/cu121
+      - torch==2.2.1+cu121
+      - numpy==1.26.2
+      - pandas==2.0.3
+      - scipy==1.11.4
+      - scikit-learn==1.3.2
+      - scikit-image==0.21.0
+      - opencv-python==4.9.0.80
+      - Pillow==10.1.0
+      - matplotlib==3.8.2
+      - openslide-python==1.3.1
+      - igraph==0.10.8
+      - imgaug==0.4.0
+      - psutil==5.9.8
+      - termcolor==2.4.0
+      - tqdm==4.66.1
+      - docopt==0.6.2
+      - tensorboardX==2.1
+      - anndata==0.10.3
+      - Shapely==2.0.4
+      - alphashape
+      - alpha-shapes
+      - descartes
